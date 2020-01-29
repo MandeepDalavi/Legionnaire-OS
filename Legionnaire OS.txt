@@ -1,0 +1,53 @@
+LegionnaireOS 2.0.1 by - Mandeep Dalavi and Ajay Babu
+------------------------------------------------------------------------------------------------------
+
+CREATE database Legionnaire;
+Use Legionnaire;
+
+CREATE table backgrounds
+( Homescreen varchar(50),
+  Loginscreen varchar(50));
+
+INSERT into backgrounds VALUES("back3.jpg","back1.jpg");
+
+CREATE table useravatar
+( Avatar varchar(50));
+
+INSERT into useravatar VALUES("user1.png");
+
+CREATE table userpass
+( username varchar(50),
+  password varchar(50));
+
+INSERT into userpass VALUES("legionnaire","password");
+
+CREATE table words
+( Srno int(3) Primary key,
+  word varchar(20) unique);
+
+INSERT into words VALUES("1","work"),("2","star"),("3","plus"),("4","lift"),("5","pure"),("6","sail"),("7","grin"),("8","same"),("9","wait"),("10","wolf"),("11","main"),("12","home"),("13","some"),("14","have"),("15","mice"),("16","bore"),("17","flaw"),("18","leak"),("19","node"),("20","nail"),("21","hare"),("22","ears"),("23","rate"),("24","weak"),("25","into"),("26","cows"),("27","lock"),("28","tame"),("29","calm"),("30","year"),("31","sake"),("32","kite"),("33","show"),("34","bags"),("35","bake"),("36","jail"),("37","labs"),("38","crop"),("39","take"),("40","cape");
+
+CREATE table  Contacts
+( Sr_No int (3) Primary Key,
+  First_Name varchar(30),
+Last_Name varchar(30),
+Number bigint(10));
+
+INSERT into contacts VALUES(1,'Mandeep','Dalavi',8769525368), (2, 'Ajay', 'Babu', 7645458926);
+
+CREATE table calling
+( Name varchar(30),
+  Number bigint(10));
+
+INSERT into calling VALUES('Mandeep Dalavi',8769525368);
+
+CREATE table bill
+( Food_Name char(25),
+  Price int(10),
+  Quantity int(5),
+  Total int(25) );
+
+CREATE table search
+( Name varchar(30) );
+----------------------------------------------------------------------------------------------------------------
+LegionnaireOS 2.0.1 by - Mandeep Dalavi and Ajay Babu
